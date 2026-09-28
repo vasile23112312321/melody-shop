@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melody Shop | Instrumente Muzicale</title>
+    <meta
+      name="description"
+      content="Melody Shop - magazin online de instrumente muzicale cu livrare gratuită în 24 de ore."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="music-bg" aria-hidden="true">
+      <svg class="stave-bg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <pattern id="staves" x="0" y="0" width="400" height="180" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="20" x2="400" y2="20" stroke="white" stroke-width="1" opacity="0.15"/>
+            <line x1="0" y1="40" x2="400" y2="40" stroke="white" stroke-width="1" opacity="0.15"/>
+            <line x1="0" y1="60" x2="400" y2="60" stroke="white" stroke-width="2" opacity="0.15"/>
+            <line x1="0" y1="80" x2="400" y2="80" stroke="white" stroke-width="1" opacity="0.15"/>
+            <line x1="0" y1="100" x2="400" y2="100" stroke="white" stroke-width="1" opacity="0.15"/>
+            
+            <text x="30" y="140" font-size="24" fill="white" opacity="0.12" font-family="serif">do</text>
+            <text x="90" y="140" font-size="24" fill="white" opacity="0.12" font-family="serif">re</text>
+            <text x="150" y="140" font-size="24" fill="white" opacity="0.12" font-family="serif">mi</text>
+            <text x="210" y="140" font-size="24" fill="white" opacity="0.12" font-family="serif">fa</text>
+            <text x="270" y="140" font-size="24" fill="white" opacity="0.12" font-family="serif">sol</text>
+            <text x="330" y="140" font-size="24" fill="white" opacity="0.12" font-family="serif">la</text>
+          </pattern>
+        </defs>
+        <rect width="1600" height="900" fill="url(#staves)"/>
+      </svg>
+    </div>
+
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">♫</span>
+          <span>Melody Shop</span>
+        </div>
+        <nav class="menu">
+          <a href="#home">Acasă</a>
+          <a href="#produse">Produse</a>
+          <a href="#despre">Despre</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="cart-button" id="cartToggle" aria-label="Deschide coșul">
+          Coș <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Muzica care inspiră performanța</p>
+            <h1>Instrumente de calitate pentru fiecare sunet.</h1>
+            <p class="lead">
+              Alege dintr-o gamă premium de instrumente muzicale: flaut, clarinet, oboi,
+              fagot, saxofon, trompetă, trombon, tubă, corn francez, fluier, nai, ocarina,
+              cornet, euphonium, fliscorn, corn englezesc, piccolo, duduk, cimpoi și vioară.
+            </p>
+            <div class="hero-actions">
+              <a href="#produse" class="button primary">Vezi produsele</a>
+              <a href="#despre" class="button secondary">Livrare 24h</a>
+            </div>
+            <ul class="hero-list">
+              <li>Livrare gratuită în 24 de ore</li>
+              <li>Piese de schimb disponibile</li>
+              <li>Garanție și consultanță specializată</li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="featured-box">
+              <p>Top vânzări</p>
+              <h2>Set premium</h2>
+              <div class="price-row">
+                <span class="old-price">€ 4.200</span>
+                <span class="new-price">€ 4.000</span>
+              </div>
+              <div class="mini-note">≈ 19.600 lei</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="container banner-inner">
+          <span>Livrare gratuită în 24 ore</span>
+          <span>Prețuri în euro și lei</span>
+          <span>Fără costuri ascunse</span>
+        </div>
+      </section>
+
+      <section id="produse" class="products">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Colecția noastră</p>
+            <h2>Instrumente profesionale</h2>
+          </div>
+
+          <div class="grid" id="productGrid">
+            <!-- Seria 1000 euro -->
+            <article class="product-card" data-name="Flaut" data-price="1000">
+              <img
+                src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80"
+                alt="Flaut"
+              />
+              <div class="card-body">
+                <span class="tag">Flaut</span>
+                <h3>Flaut de concert</h3>
+                <p>Sunet clar și fin, ideal pentru studio și interpretare live.</p>
+                <div class="price-wrap">
+                  <strong>€ 1.000</strong>
+                  <span>4.900 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Fluier" data-price="1000">
+              <img
+                src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80"
+                alt="Fluier"
+              />
+              <div class="card-body">
+                <span class="tag">Fluier</span>
+                <h3>Fluier tradițional</h3>
+                <p>Sunet autentic și cald, perfect pentru muzică folclorică.</p>
+                <div class="price-wrap">
+                  <strong>€ 1.000</strong>
+                  <span>4.900 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Nai" data-price="1000">
+              <img
+                src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80"
+                alt="Nai"
+              />
+              <div class="card-body">
+                <span class="tag">Nai</span>
+                <h3>Nai profesional</h3>
+                <p>Instrumen folcloric cu ton melodios și expresiv.</p>
+                <div class="price-wrap">
+                  <strong>€ 1.000</strong>
+                  <span>4.900 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <!-- Seria 1500 euro -->
+            <article class="product-card" data-name="Clarinet" data-price="1500">
+              <img
+                src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+                alt="Clarinet"
+              />
+              <div class="card-body">
+                <span class="tag">Clarinet</span>
+                <h3>Clarinet profesional</h3>
+                <p>Fiabil și expresiv, perfect pentru orchestre și studii de înregistrare.</p>
+                <div class="price-wrap">
+                  <strong>€ 1.500</strong>
+                  <span>7.350 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Ocarina" data-price="1500">
+              <img
+                src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80"
+                alt="Ocarina"
+              />
+              <div class="card-body">
+                <span class="tag">Ocarina</span>
+                <h3>Ocarina de culoare</h3>
+                <p>Sunet dulce și purtabil, ușor de învățat și jucat.</p>
+                <div class="price-wrap">
+                  <strong>€ 1.500</strong>
+                  <span>7.350 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Trompetă" data-price="1500">
+              <img
+                src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+                alt="Trompetă"
+              />
+              <div class="card-body">
+                <span class="tag">Trompetă</span>
+                <h3>Trompetă B-flat</h3>
+                <p>Material rezistent și sunet vibrant pentru performanțe live.</p>
+                <div class="price-wrap">
+                  <strong>€ 1.500</strong>
+                  <span>7.350 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <!-- Seria 2000 euro -->
+            <article class="product-card" data-name="Oboi" data-price="2000">
+              <img
+                src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80"
+                alt="Oboi"
+              />
+              <div class="card-body">
+                <span class="tag">Oboi</span>
+                <h3>Oboi de performanță</h3>
+                <p>Tonuri calde și articulate pentru expresivitate maximă.</p>
+                <div class="price-wrap">
+                  <strong>€ 2.000</strong>
+                  <span>9.800 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Corn" data-price="2000">
+              <img
+                src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80"
+                alt="Corn"
+              />
+              <div class="card-body">
+                <span class="tag">Corn</span>
+                <h3>Corn natural</h3>
+                <p>Sunet potolit și plin, ideal pentru muzică clasică.</p>
+                <div class="price-wrap">
+                  <strong>€ 2.000</strong>
+                  <span>9.800 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Trombon" data-price="2000">
+              <img
+                src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80"
+                alt="Trombon"
+              />
+              <div class="card-body">
+                <span class="tag">Trombon</span>
+                <h3>Trombon tenor</h3>
+                <p>Sunet puternic și flexibil, recomandat pentru orchestră și big band.</p>
+                <div class="price-wrap">
+                  <strong>€ 2.000</strong>
+                  <span>9.800 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <!-- Seria 2500 euro -->
+            <article class="product-card" data-name="Fagot" data-price="2500">
+              <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80"
+                alt="Fagot"
+              />
+              <div class="card-body">
+                <span class="tag">Fagot</span>
+                <h3>Fagot profesional</h3>
+                <p>Greutate echilibrată, răspuns rapid și sonoritate bogată.</p>
+                <div class="price-wrap">
+                  <strong>€ 2.500</strong>
+                  <span>12.250 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Cornet" data-price="2500">
+              <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80"
+                alt="Cornet"
+              />
+              <div class="card-body">
+                <span class="tag">Cornet</span>
+                <h3>Cornet profesional</h3>
+                <p>Sunet cald și expresiv, perfect pentru jazz și fanfare.</p>
+                <div class="price-wrap">
+                  <strong>€ 2.500</strong>
+                  <span>12.250 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Tubă" data-price="2500">
+              <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80"
+                alt="Tubă"
+              />
+              <div class="card-body">
+                <span class="tag">Tubă</span>
+                <h3>Tubă profesională</h3>
+                <p>Confort sporit la execuție și ton profund, bine definit.</p>
+                <div class="price-wrap">
+                  <strong>€ 2.500</strong>
+                  <span>12.250 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <!-- Seria 3000 euro -->
+            <article class="product-card" data-name="Saxofon" data-price="3000">
+              <img
+                src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?auto=format&fit=crop&w=900&q=80"
+                alt="Saxofon"
+              />
+              <div class="card-body">
+                <span class="tag">Saxofon</span>
+                <h3>Saxofon tenor</h3>
+                <p>Perfect pentru jazz, recital și interpretare vocală modernă.</p>
+                <div class="price-wrap">
+                  <strong>€ 3.000</strong>
+                  <span>14.700 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Corn francez" data-price="3000">
+              <img
+                src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80"
+                alt="Corn francez"
+              />
+              <div class="card-body">
+                <span class="tag">Corn francez</span>
+                <h3>Corn francez de lux</h3>
+                <p>Sonoritate elegantă, control perfect și performanță de top.</p>
+                <div class="price-wrap">
+                  <strong>€ 3.000</strong>
+                  <span>14.700 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Euphonium" data-price="3000">
+              <img
+                src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?auto=format&fit=crop&w=900&q=80"
+                alt="Euphonium"
+              />
+              <div class="card-body">
+                <span class="tag">Euphonium</span>
+                <h3>Euphonium profesional</h3>
+                <p>Sunet bogat și sonor, ideal pentru orchestră și fanfare.</p>
+                <div class="price-wrap">
+                  <strong>€ 3.000</strong>
+                  <span>14.700 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <!-- Seria 3500 euro -->
+            <article class="product-card" data-name="Fliscorn" data-price="3500">
+              <img
+                src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80"
+                alt="Fliscorn"
+              />
+              <div class="card-body">
+                <span class="tag">Fliscorn</span>
+                <h3>Fliscorn premium</h3>
+                <p>Instrument versatil cu sunet clar și expresiv.</p>
+                <div class="price-wrap">
+                  <strong>€ 3.500</strong>
+                  <span>17.150 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Corn englezesc" data-price="3500">
+              <img
+                src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?auto=format&fit=crop&w=900&q=80"
+                alt="Corn englezesc"
+              />
+              <div class="card-body">
+                <span class="tag">Corn englezesc</span>
+                <h3>Corn englezesc</h3>
+                <p>Ton misterios și plin, inconfundabil în orchestră.</p>
+                <div class="price-wrap">
+                  <strong>€ 3.500</strong>
+                  <span>17.150 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Duduk" data-price="3500">
+              <img
+                src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80"
+                alt="Duduk"
+              />
+              <div class="card-body">
+                <span class="tag">Duduk</span>
+                <h3>Duduk autentic</h3>
+                <p>Sunet ancestral plin de emoție și profunzime.</p>
+                <div class="price-wrap">
+                  <strong>€ 3.500</strong>
+                  <span>17.150 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <!-- Seria 4000 euro -->
+            <article class="product-card" data-name="Piccolo" data-price="4000">
+              <img
+                src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80"
+                alt="Piccolo"
+              />
+              <div class="card-body">
+                <span class="tag">Piccolo</span>
+                <h3>Piccolo de concert</h3>
+                <p>Sunet ușor și strălucitor pentru solo și orchestră.</p>
+                <div class="price-wrap">
+                  <strong>€ 4.000</strong>
+                  <span>19.600 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Cimpoi" data-price="4000">
+              <img
+                src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?auto=format&fit=crop&w=900&q=80"
+                alt="Cimpoi"
+              />
+              <div class="card-body">
+                <span class="tag">Cimpoi</span>
+                <h3>Cimpoi tradițional</h3>
+                <p>Instrumen folcloric autentic cu sunet vibrant și plin.</p>
+                <div class="price-wrap">
+                  <strong>€ 4.000</strong>
+                  <span>19.600 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Vioară" data-price="4000">
+              <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80"
+                alt="Vioară"
+              />
+              <div class="card-body">
+                <span class="tag">Vioară</span>
+                <h3>Vioară maestru</h3>
+                <p>Sunet plin și expresiv, perfectă pentru concerte și studii.</p>
+                <div class="price-wrap">
+                  <strong>€ 4.000</strong>
+                  <span>19.600 lei</span>
+                </div>
+                <button class="add-cart">Adaugă în coș</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="despre" class="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">De ce noi?</p>
+            <h2>Calitate, experiență și livrare rapidă</h2>
+            <p>
+              Melody Shop oferă servicii de consultanță pentru pasionații de muzică,
+              profesioniști și studenți din domeniul artistic. Toate produsele sunt
+              verificate înainte de expediere și sunt livrate rapid acasă sau la sediu.
+            </p>
+            <ul class="check-list">
+              <li>Asistență de specialitate</li>
+              <li>Piese de schimb premium</li>
+              <li>Ambalare sigură și livrare gratuită</li>
+            </ul>
+          </div>
+
+          <div class="info-panel">
+            <div>
+              <strong>24h</strong>
+              <span>Livrare</span>
+            </div>
+            <div>
+              <strong>21+</strong>
+              <span>Instrumente</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Garanție</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-live="polite">
+      <div class="cart-header">
+        <h3>Coșul meu</h3>
+        <button id="closeCart" aria-label="Închide coșul">×</button>
+      </div>
+      <div id="cartItems" class="cart-items">
+        <p class="empty-cart">Nu ai niciun produs în coș.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="cartTotal">0 €</strong>
+        </div>
+        <button class="checkout">Finalizează comanda</button>
+      </div>
+    </aside>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand small">
+            <span class="brand-mark">♫</span>
+            <span>Melody Shop</span>
+          </div>
+          <p>Magazin online de instrumente muzicale pentru pasionați și profesioniști.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: office@melodyshop.ro</p>
+          <p>Telefon: +40 721 123 456</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
